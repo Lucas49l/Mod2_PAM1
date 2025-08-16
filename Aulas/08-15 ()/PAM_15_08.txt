@@ -1,0 +1,2 @@
+local do projeto
+C:\Users\LUCAS_180\AndroidStudioProjects\MODULARPAM1LucasAtividade
