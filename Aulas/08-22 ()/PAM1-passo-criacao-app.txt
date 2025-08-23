@@ -1,0 +1,44 @@
+Passos para criacao de um app:
+1 - Criar o layout (desenhar a tela)
+2 - Colocar id nos elementos que o usuario vai digitar ou clicar (identificar os elementos) Por que colocar ID nos elementos? Para poder ligar o elemento com o código.
+
+3 - Linkar a tela com a classe (quando o usuario clicar em um botao por exemplo, esse clique tem que chegar na classe para informar o que queremos que o botao faça)
+
+4 - Na classe declarar variáveis do tipo de cada elemento que possui um ID.
+
+5 - Para linkar a tela com o codigo (a classe), temos que usar o metodo findViewById(R.id.nome_da_tela) - findViewById significa procurar um elemento pelo seu id, por isso temos que colocar o id nos elementos.
+
+6 - Desenvolver a logica 
+
+Para desenhar a tela, temos varios tipos de layout que podemos usar. Vamos ver dois deles:
+     ConstraintLayout
+ 	          - Os elementos tem que ser ancorados vertical e horizontalmente para 		    permanecer no local. 
+                  - Precisamos ligar os elementos com as "molinhas/ancoras" (Constraints)
+     LinearLayout
+    		- Os elementos ficam ou um abaixo do outro quando a orientacao é                            vertical, ou um ao lado do outro quando a orientacao é horizontal;
+
+		- O padrão é horizontal. 
+
+Uma Activity é uma tela ligada a uma classe. Ou seja, é um conjunto entre classe e uma tela juntos.
+
+
+Utilizamos a herança para evitar retrabalho e herdar todos os atributos e métodos da superclasse, em Java utilizamos a palavra reservada extends. 
+
+Quando clicamos para abrir um app, o primeiro metodo que roda é o onCreate(). Dentro desse metodo temos o metodo setContentView(R.id.activity_main) que vai desenhar a tela que esta ligada à classe. setContentView signica indicar uma visualizacao de conteudo, em outras palavras, significa desenhar a tela com seus conteudos.
+Dentro da pasta res (resources) temos as pastas:
+drawable	armazenar imagens do projeto
+layout		armazena as telas de layout do projeto
+mipmap		armazena os icones do app
+values		armazena os estilos, as cores e a parte literal do projeto
+
+
+
+
+
+
+
+
+
+
+
+

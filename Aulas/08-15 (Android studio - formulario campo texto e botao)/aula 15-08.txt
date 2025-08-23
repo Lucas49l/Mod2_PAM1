@@ -1,0 +1,57 @@
+Criação do Projeto:
+
+Para o nome do projeto vamos utilizar o padrão:
+MODULAR PAMI Fabio Atividade
+
+Para o package name o padrão:
+
+android.fabio.nome_do_projeto
+-------------------------------
+Quando criamos um projeto o android cria dois arquivos:
+
+O MainActivity.java - código java [padrão camelCase]
+
+O activity_main.xml - o layout (tela) [padrão snake_case]
+
+
+topto escolhe topToTopOf e escolhe o "parent", liga a parte de cima do elemento com a parte de cima do container pai. 
+
+topToTop - parte de cima do elemento com a parte de cima de outro elemento. 
+
+topToBottom - parte de cima do elemento com a parte de baixo do outro. 
+
+bottomToBottom - parte de baixo de um elemento com a parte de baixo de outro elemento 
+
+startToStart - parte esquerda do elemento com a parte esquerda do outro elemento 
+
+endToEnd - parte direita com a parte direita do outro elemento. 
+
+TextView - elemento de texto 
+
+EditText - elemento de entrada de texto
+
+Button   - botão 
+Esticar  - ligar a esquerda e a direita e escolher width = "match_parent"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

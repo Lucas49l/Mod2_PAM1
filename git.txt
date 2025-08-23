@@ -1,0 +1,8 @@
+para subir para o git:
+crie o repositorio para todas as aulas de pam e copie a url
+clonar o repositorio criado dentro da pasta AndroidStudioProjects
+Pegar a pasta do projeto Android e arrastar para dentro dessa pasta que clonamos
+git add .
+git commit -m ""
+git push
+
