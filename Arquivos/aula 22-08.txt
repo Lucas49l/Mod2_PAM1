@@ -1,0 +1,24 @@
+O padrao de layout do Android Studio é o ConstraintLayout.
+Esse tipo de layout é o mais completo e complexo dos layouts.
+Entao se a gente aprender a usar esse layout, os outros serao bem mais faceis.
+Ele se baseia em ancoras (constraints) que ligam os elementos ao container pai e aos outros elementos.
+Podemos utilizar o design para desenhar as telas, mas o ideal é fazer via digitacao.
+
+Passos para criacao de um app:
+==============================
+No xml:
+1 - Desenhar a tela
+2 - Identificar os elementos que irao interagir com o usuario (caixas de digitacao, botoes)
+
+Na classe (java ou kotlin):
+1 - Declarar as classes dos elementos: cada elemento no layout é uma classe. Esse elemento tem que ser declarado na classe java
+2 - Ligar o layout com o codigo atraves do metodo findViewById()
+3 - Criar o evento de clique do botao (O que queremos que aconteca ao clicar no botao)
+4 - Desenvolver a logica 
+
+Drawable
+========
+Para adicionar imagens no app, essas imagens tem que ser colocadas dentro da pasta drawable (desenho).
+Podemos baixar imagens da internet ou usar imagens da biblioteca do Android. 
+OBS.: O nome das imagens nao pode conter letras maiusculas, acento, cedilha ou espaco. Se o nome for composto, utilizamos underline.
+Para adicionar da biblioteca: botao direito na pasta drawable, new > vector asset > clip art > escolher o icone.

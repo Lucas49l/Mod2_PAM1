@@ -1,0 +1,28 @@
+Declarando as variaveis de acordo com seus elementos Ex.:
+    
+	ELEMENTO	VARIAVEL
+	EditText	nota1, nota2, nota3, nota4, faltas;
+	Button	 	btnCalcular;
+	TextView 	txtResultado;
+
+Comando que faz as ligações 
+	VARIAVEL = findViewById(R.id.IDLAYOUT);
+
+Verifica se o "texto" pego pela variavel está vazio/True usado no if, else
+	TextUtils.isEmpty(variavel.getText()); 
+ 	variavel.setError("Mensagem de Erro");
+
+evento acionado quando o botão for clicado, executando o código entre das chaves
+	VARIAVEL.setOnClickListener(view -> {
+		bloco de código    
+	});
+
+Envia um texto no campo vinculado a variavel
+Variavel.setText("...");
+
+Envia um texto no campo vinculado a variavel com cor especifica
+	Variavel.setTextColor(Color.parseColor("#f44336"));
+	Variavel.setText("...");
+
+Conversão de String em double
+double variavel = Double.parseDouble(variavel.getText().toString());

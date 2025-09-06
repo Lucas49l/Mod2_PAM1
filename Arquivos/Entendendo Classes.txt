@@ -1,0 +1,42 @@
+Variaveis:
+=========
+- Sao espacos na memoria para armazenar um conteudo.
+
+Tipos de variaveis:
+==================
+- Voces conhecem os tipos caracter, int, real e logico. Mas existem muitos outros tipos como veremos mais adiante.
+Algumas linguagens sao fortemente tipadas, o que significa que tudo dentro delas tem que ter um tipo.
+Exemplo: Java
+Em outras linguagens o tipo nao eh necessario. Exemplo: Kotlin, php entre outras
+
+IDE - Integrated Developer Enviroment - Ambiente de Desenvolvimento Integrado. Sao os programas que vamos usar para criar as nossas aplicacoes. Voces conhecem o Visualg
+Mas vamos conhecer outros: Netbeans - InteliJ - Android Studio Visual Studio Code (VSCode)entre outros.
+
+Estrutura de uma classe:
+=======================
+
+Nome da classe:
+==============
+- Sempre comecando com letra maiuscula.
+
+Atributos: 
+=========
+- Sempre tem que ter um tipo e letra minuscula. Se o nome do atributo for composto, a primeira letra da palavra seguinte sera em maiuscula para facilitar a leitura. 
+
+Metodos:
+=======
+- Sao as acoes que a classe vai fazer. eles podem receber parametros ou nao, e devolver um retorno ou nao tambem.
+Todo atributo tem que ter um tipo. 
+O tipo do atributo pode ser inteiro, double, char, logico, que sao tipos primitivos.
+Ou tipos classe String, EditText, Button, e outras classes. Todo tipo classe comeca com letra maiuscula, porque uma classe sempre comeca com maiuscula.
+Os tipos no java sao divididos em primitivios e classes. Tipos primitivos contem apenas o valor deles. 
+Os tipos classe contem alem do valor, diversos atributos e metodos dentro deles.
+Se eu declaro uma variavel:
+int valor = 5; dentro da memoria do computador havera apenas o numero 5
+Se eu declaro uma variavel:
+String nome = "Rubens"; dentro da memoria do computador havera varios atributos e metodos, dentre eles o metodo que contem o nome.
+
+A partir de agora, a gente vai criar aplicativos que usam logica. E a lógica precisa de uma linguagem de programacao. No Android, podemos usar Java ou Kotlin.
+Essas linguagens sao orientadas a objeto. Entao precisamos entender um pouco mais sobre objetos e classes.
+Para isso vamos criar uma classe Conta com atributos e metodos. 
+O primeiro passo para criar uma classe é criar o Diagrama de classe. Um diagrama de classe é uma representacao grafica da classe. 
