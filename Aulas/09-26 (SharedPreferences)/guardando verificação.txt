@@ -1,0 +1,25 @@
+
+public class SplashScreenActivity extends AppCompatActivity { 
+
+	@Override protected void onCreate(Bundle savedInstanceState) { 
+	
+		SharedPreferences preferences = getSharedPreferences("user_preferences", MODE_PRIVATE);
+		
+		if (preferences.contains("ja_abriu_app")) { 
+			mostrarLogin() } 
+  		else { 
+			mostrarSplash() 
+  		} 
+	}
+
+	private void mostrarSplash() { 
+		Handler handle = new Handler(); 
+		handle.postDelayed(new Runnable() { 
+			@Override 
+			public void run() { 
+				mostrarLogin();
+    			} 
+  		}, 2000); 
+	}
+//métodos
+}

@@ -1,0 +1,22 @@
+No Android, existem diversas opções de armazenamento, conhecidas como Storage Options, dentre essas opções, temos a Shared Preferences que nos permite armazenar valores primitivos, como por exemplo, booleans, floats, ints, longs e Strings a partir de uma chave, por exemplo:
+
+chave: ja_abriu_app, valor: true
+
+
+// Guardando dados no celular dentro da pasta data -> pasta do projeto -> shared_prefs -> arquivo.xml 
+
+public class MainActivity extends AppCompatActivity {
+
+	SharedPreferences preferences;
+
+    	public static final String PREFS_NAME = "dados";
+
+	protected void onCreate(Bundle savedInstanceState) {
+	
+		preferences = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+		SharedPreferences.Editor meusDados = preferences.edit();
+		meusDados.putString("chave","valor");
+
+		meusDados.apply();
+	}
+}
