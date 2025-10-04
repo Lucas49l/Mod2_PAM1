@@ -1,0 +1,92 @@
+public class MainActivity extends AppCompatActivity {
+
+    //Arquivos de preferencias para salvar
+
+    private static final String PREFS_NAME = "user_prefs";
+
+    //Chaves que serão utilizadas no SharedPreferences
+
+    private static final String KEY_NOME = "nome";
+    private static final String KEY_IDADE = "idade";
+    private static final String KEY_CONTADOR = "contatdor";
+
+    //Variáveis da tela
+
+    private SharedPreferences sharedPreferences;
+    private EditText nomeEditText;
+    private EditText idadeEditText;
+    private TextView displayTextView;
+    private Button btnSalvar;
+    private Button btnCarregar;
+
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_main);
+
+
+        //inicializar a variável do chave valor
+        sharedPreferences = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+
+        //linkar variaveis do java com as do form da tela
+        nomeEditText    = findViewById(R.id.nomeEditText);
+        idadeEditText   = findViewById(R.id.idadeEditText);
+        displayTextView = findViewById(R.id.displayTextView);
+        btnSalvar       = findViewById(R.id.btnSalvar);
+        btnCarregar     = findViewById(R.id.btnCarregar);
+
+	//acão nos botões chamando os métodos
+        btnSalvar.setOnClickListener(v -> salvarDadosUsuario());
+        btnCarregar.setOnClickListener(v -> carregarDadosUsuario());
+}
+
+     private void salvarDadosUsuario(){
+        String nome = nomeEditText.getText().toString().trim();
+        String idadeStr = idadeEditText.getText().toString().trim();
+
+        if(nome.isEmpty() || idadeStr.isEmpty()){
+            displayTextView.setText("Preencha todos os campos");
+            return;
+        }
+
+        //vamos tentar...
+        try {
+            int idade = Integer.parseInt(idadeStr);
+            //nossa espécie de DML
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+
+            //inserir
+            editor.putString(KEY_NOME, nome);
+            editor.putInt(KEY_IDADE, idade);
+
+            //Contar a quantidade de contados salvos
+            int contadorAtual = sharedPreferences.getInt(KEY_CONTADOR, 0);
+            editor.putInt(KEY_CONTADOR, +1);
+            editor.apply();
+            
+            //limpa os campos
+            nomeEditText.setText("");
+            idadeEditText.setText("");
+            
+            //colocar um foco no campo
+            nomeEditText.requestFocus();
+
+        }catch (NumberFormatException e){
+            displayTextView.setText("idade inválida!");
+        }
+    }
+
+    private void carregarDadosUsuario(){
+	String nome = sharedPreferences.getString(KEY_NOME, null);
+        int idade = sharedPreferences.getInt(KEY_IDADE, -1 );
+
+        if(nome == null || idade == -1){
+            displayTextView.setText("Nenhum contato salvo ainda");
+        }else{
+            displayTextView.setText("Nome"+nome+"\nidade: "+idade);
+        }
+
+    }
+}
+	

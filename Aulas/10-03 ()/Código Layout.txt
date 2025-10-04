@@ -1,0 +1,60 @@
+    <TextView android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salvar_contato"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText android:id="@+id/nomeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/digite_seu_nome"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <EditText android:id="@+id/idadeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/digite_sua_idade"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/nomeEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <Button android:id="@+id/btnSalvar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/salvar"
+        app:layout_constraintTop_toBottomOf="@+id/idadeEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCarregar"
+        android:layout_marginTop="18dp"/>
+
+    <Button android:id="@+id/btnCarregar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/carregar"
+        app:layout_constraintTop_toBottomOf="@+id/idadeEditText"
+        app:layout_constraintStart_toEndOf="@+id/btnSalvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="18dp" />
+
+    <TextView android:id="@+id/displayTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nenhum_contato_salvo_ainda"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="gray"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/btnSalvar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"/>

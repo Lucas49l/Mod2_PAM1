@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Modular PAM1 Lucas Guimaraes Armazenamento</string>
+    <string name="nenhum_contato_salvo_ainda">Nenhum Contato Salvo Ainda.</string>
+    <string name="carregar">Carregar</string>
+    <string name="salvar">Salvar</string>
+    <string name="digite_sua_idade">Digite sua idade</string>
+    <string name="digite_seu_nome">Digite seu nome</string>
+    <string name="salvar_contato">Salvar Contato</string>
+</resources>
