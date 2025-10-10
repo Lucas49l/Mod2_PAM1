@@ -1,0 +1,33 @@
+ Button btnNewLayout, btnDobrarValor;
+    EditText editText;
+    TextView textView;
+
+initComponents();
+
+        btnDobrarValor.setOnClickListener(v -> calcularValor());
+
+        btnNewLayout.setOnClickListener( v -> {
+            Intent intent = new
+            Intent(MainActivity.this, Pagina2.class);
+            startActivity(intent);
+        });
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+    }
+
+    private void calcularValor() {
+        int x = Integer.parseInt(editText.getText().toString());
+        int res = x*2;
+        textView.setText(res);
+    }
+
+    private void initComponents() {
+        btnNewLayout = findViewById(R.id.btnNewLayout);
+        btnDobrarValor = findViewById(R.id.btnDobrarValor);
+        editText = findViewById(R.id.editText);
+        textView = findViewById(R.id.textView);
+    }

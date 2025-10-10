@@ -1,0 +1,13 @@
+class MainActivity...{
+
+
+OnCreate...
+Button btnNewLayout = findViewById(R.id.btnNewLayout);
+
+
+btnNewLayout.setOnClickListener( v -> {
+
+            Intent intent = new
+            Intent(MainActivity.this, Pagina2.class);
+            startActivity(intent);
+        });
