@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#092D43">
+
+    <LinearLayout android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.imcActivity"
+        android:background="#DCE7FF"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/imc_Descricao"
+            android:textSize="20sp"
+            android:textColor="#092D43"
+            android:background="#F4F4FF"
+            android:padding="15dp"
+            android:layout_marginBottom="30dp"/>
+
+        <EditText android:id="@+id/edt_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/form"
+            android:hint="@string/imc_weight"
+            android:textColorHint="#092D43"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText android:id="@+id/edt_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/form"
+            android:hint="@string/imc_height"
+            android:textColorHint="#092D43"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <Button android:id="@+id/btn_calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/imc_btn_calcular"
+            android:textColor="#F4F4FF"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:cornerRadius="5dp"
+            android:backgroundTint="#092D43"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</ScrollView>
