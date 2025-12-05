@@ -1,8 +1,0 @@
-14-11-2025 Modular PAMI App Fitness Seu-nome - Linguagem -> KOTLIN
-============================================
-
-Internacionalizacao de App: Suponha que voce tenha um aplicativo que deseja comercializar em outra lingua. 
-Se voce enviar o app para a empresa traduzir, corre o risco dessa empresa copiar seu codigo.
-Para resolver esse problema, devemos colocar todos os textos (explicacoes, titulos, labels, texto de botoes etc) em um arquivo separado. 
-E depois enviamos apenas esse arquivo para a empresa traduzir, de forma que ela nao tem acesso ao app.
-Outra coisa que podemos fazer é criar varios arquivos de texSto em varias linguas onde o usuario escolhe qual idioma prefere usar.
